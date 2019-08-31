@@ -72,9 +72,13 @@ class Main extends Component {
         error: false,
       });
     } catch {
-      this.setState({ error: true });
+      this.setState({
+        error: true,
+      });
     }
-    this.setState({ loading: false });
+    this.setState({
+      loading: false,
+    });
   };
 
   render() {
